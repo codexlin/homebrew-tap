@@ -1,20 +1,20 @@
 class Unoskills < Formula
   desc "Local-first skill and stack manager for AI coding agents"
   homepage "https://github.com/codexlin/UnoSkills"
-  version "0.8.7"
+  version "0.8.8"
   license "MIT"
 
   on_macos do
-    url "https://github.com/codexlin/UnoSkills/releases/download/v0.8.7/unoskills-macos-arm64", using: :nounzip
-    sha256 "8d6563c39692a3b75d5db6d44c01c4c1c4ef402f813f975206dacf6c3a640963"
+    url "https://github.com/codexlin/UnoSkills/releases/download/v0.8.8/unoskills-macos-arm64", using: :nounzip
+    sha256 "fc52ff270e4a81b5fb942c0185af46b71a5c0f203c5d39d928e983a0a5d514b2"
 
     depends_on arch: :arm64
     depends_on macos: :sonoma
   end
 
   on_linux do
-    url "https://github.com/codexlin/UnoSkills/releases/download/v0.8.7/unoskills-linux-x64", using: :nounzip
-    sha256 "e03d28cc48dca072a09de6807eec78a84c0eb7589d56945bc71faac479cb8b7e"
+    url "https://github.com/codexlin/UnoSkills/releases/download/v0.8.8/unoskills-linux-x64", using: :nounzip
+    sha256 "ec84493b3f6738be87ad01d875fb676345ff9fbcca11efd95f313cd6e0cfe178"
 
     depends_on "patchelf" => :build
     depends_on "openssl@3"
